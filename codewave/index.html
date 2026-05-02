@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#030308" />
+  <meta name="description" content="CODEWAVE — software, sites e soluções web. Estudantes de Engenharia de Software." />
+  <title>CODEWAVE — Engenharia & Web</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Orbitron:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="grid-bg" aria-hidden="true"></div>
+  <div class="orb orb-a" aria-hidden="true"></div>
+  <div class="orb orb-b" aria-hidden="true"></div>
+
+  <header class="header">
+    <a href="#" class="brand">
+      <span class="brand-icon" aria-hidden="true"></span>
+      <span class="brand-text">CODE<span class="brand-accent">WAVE</span></span>
+    </a>
+    <button type="button" class="nav-toggle" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav">
+      <a href="#servicos">Serviços</a>
+      <a href="#equipe">Equipe</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-badge">
+        <span class="pulse"></span>
+        <span>Eng. de Software · em construção</span>
+      </div>
+      <h1 class="hero-title">
+        <span class="glitch-layer" data-text="CODEWAVE">CODEWAVE</span>
+      </h1>
+      <p class="hero-tagline">Software, sites e experiências digitais — do conceito ao deploy.</p>
+      <div class="hero-actions">
+        <a href="#contato" class="btn btn-primary">Iniciar projeto</a>
+        <a href="#servicos" class="btn btn-ghost">O que fazemos</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-value">04</span>
+          <span class="stat-label">devs</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value">∞</span>
+          <span class="stat-label">linhas de código</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value">100%</span>
+          <span class="stat-label">foco em qualidade</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="servicos" class="section services">
+      <div class="section-head">
+        <span class="section-id">// 01</span>
+        <h2>Serviços</h2>
+        <p>Soluções sob medida para quem precisa de presença e performance na web.</p>
+      </div>
+      <div class="card-grid">
+        <article class="card">
+          <div class="card-glow"></div>
+          <span class="card-icon">◇</span>
+          <h3>Software</h3>
+          <p>Sistemas, automações e ferramentas que resolvem problemas reais.</p>
+        </article>
+        <article class="card">
+          <div class="card-glow"></div>
+          <span class="card-icon">◇</span>
+          <h3>Sites &amp; landing pages</h3>
+          <p>Interfaces rápidas, responsivas e prontas para converter visitantes.</p>
+        </article>
+        <article class="card">
+          <div class="card-glow"></div>
+          <span class="card-icon">◇</span>
+          <h3>Websites completos</h3>
+          <p>Arquitetura, integrações e experiência de ponta a ponta.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="equipe" class="section team">
+      <div class="section-head">
+        <span class="section-id">// 02</span>
+        <h2>Equipe</h2>
+        <p>Estudantes de Engenharia de Software — código, curiosidade e café.</p>
+      </div>
+      <ul class="team-list">
+        <li class="team-row">
+          <span class="team-role">dev</span>
+          <span class="team-name">João Victor Sampaio</span>
+          <span class="team-line" aria-hidden="true"></span>
+        </li>
+        <li class="team-row">
+          <span class="team-role">dev</span>
+          <span class="team-name">Ataides Junior</span>
+          <span class="team-line" aria-hidden="true"></span>
+        </li>
+        <li class="team-row">
+          <span class="team-role">dev</span>
+          <span class="team-name">Kawan Mangia</span>
+          <span class="team-line" aria-hidden="true"></span>
+        </li>
+        <li class="team-row">
+          <span class="team-role">dev</span>
+          <span class="team-name">Pedro Marcos</span>
+          <span class="team-line" aria-hidden="true"></span>
+        </li>
+      </ul>
+    </section>
+
+    <section id="contato" class="section contact">
+      <div class="contact-panel">
+        <div class="section-head section-head--inline">
+          <span class="section-id">// 03</span>
+          <h2>Contato</h2>
+        </div>
+        <p class="contact-lead">Tem uma ideia? Bora transformar em produto.</p>
+        <div class="contact-links">
+          <a href="mailto:contato@codewave.dev" class="link-mono">contato@codewave.dev</a>
+          <span class="contact-hint">Substitua pelo e-mail real quando tiver domínio.</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-brand">CODEWAVE</div>
+    <p class="footer-meta">© <span id="year"></span> · construído com propósito</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

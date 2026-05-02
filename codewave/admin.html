@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="theme-color" content="#030308" />
+  <title>Admin · CODEWAVE</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Orbitron:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="admin.css" />
+</head>
+<body class="page-admin">
+  <div class="noise" aria-hidden="true"></div>
+  <div class="grid-bg" aria-hidden="true"></div>
+  <div class="orb orb-a" aria-hidden="true"></div>
+  <div class="orb orb-b" aria-hidden="true"></div>
+
+  <div id="login-screen" class="admin-login">
+    <div class="admin-login-card">
+      <p class="admin-login-badge"><span class="pulse"></span> Área restrita</p>
+      <h1 class="admin-login-title">Administrador</h1>
+      <p class="admin-login-hint">CODEWAVE — acesso interno</p>
+      <form id="admin-form" class="admin-form" novalidate>
+        <label class="admin-label" for="admin-user">Usuário</label>
+        <input class="admin-input" id="admin-user" name="user" type="text" autocomplete="username" required />
+        <label class="admin-label" for="admin-pass">Senha</label>
+        <input class="admin-input" id="admin-pass" name="password" type="password" autocomplete="current-password" required />
+        <p id="admin-error" class="admin-error" hidden>Credenciais inválidas.</p>
+        <button type="submit" class="btn btn-primary admin-submit">Entrar</button>
+      </form>
+      <a href="index.html" class="admin-back-site">← Voltar ao site público</a>
+    </div>
+  </div>
+
+  <div id="admin-panel" class="admin-panel" hidden>
+    <header class="admin-bar">
+      <span class="admin-bar-brand">CODEWAVE <span class="admin-bar-tag">admin</span></span>
+      <div class="admin-bar-actions">
+        <a href="index.html" class="admin-bar-link">Ver site</a>
+        <button type="button" id="admin-logout" class="btn btn-ghost admin-logout-btn">Sair</button>
+      </div>
+    </header>
+    <main class="admin-main">
+      <h2 class="admin-main-title">Painel</h2>
+      <p class="admin-main-lead">Sessão ativa. Aqui vocês podem evoluir depois: métricas, mensagens, CMS, etc.</p>
+      <ul class="admin-placeholder-list">
+        <li>Status: <strong>operacional</strong></li>
+        <li>Perfil: <strong>administrador</strong></li>
+        <li>Nenhum dado sensível do site público é exibido aos visitantes.</li>
+      </ul>
+    </main>
+  </div>
+
+  <script src="admin.js"></script>
+</body>
+</html>
